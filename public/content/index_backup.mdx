@@ -1,0 +1,35 @@
+---
+title: AutoPrefixer Documentation
+description: Standardize your Unreal Engine project naming conventions with one click.
+template: splash
+---
+
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why AutoPrefixer?
+
+Standard naming conventions are critical for large-scale Unreal Engine projects. **AutoPrefixer** automates this tedious process, ensuring that every asset follows the [Epic Games Standard Naming Convention](https://docs.unrealengine.com/5.0/en-US/recommended-asset-naming-conventions-in-unreal-engine-projects/).
+
+<CardGrid stagger>
+	<Card title="Bulk Processing" icon="pencil">
+		Rename hundreds of assets in seconds. Select multiple files in the Content Browser and let the utility do the work.
+	</Card>
+	<Card title="Smart Scrubbing" icon="add-document">
+		Intelligently removes legacy prefixes (like `sm_`, `mesh_`, `t_`) before applying the correct standard prefix.
+	</Card>
+	<Card title="Fully Customizable" icon="setting">
+		Define your own prefix rules for any asset class through the standard Unreal Engine Project Settings menu.
+	</Card>
+	<Card title="Zero Weight" icon="rocket">
+		Built as a lightweight C++ plugin with zero runtime overhead. No actor components or heavy blueprints required.
+	</Card>
+</CardGrid>
+
+## Features at a Glance
+
+- **Native C++ Performance**: Fast, reliable, and integrated directly into the editor context menu.
+- **Support for 50+ Classes**: Pre-configured with defaults for almost every standard Unreal Engine asset type.
+- **Error-Proof Logic**: Prevents double-prefixing and handles naming collisions gracefully.
+- **Organization Support**: Automatically routes renamed assets into predefined subfolders.
+- **Multi-Version Support**: Compatible with Unreal Engine 5.1, 5.2, 5.3, 5.4, and 5.5.

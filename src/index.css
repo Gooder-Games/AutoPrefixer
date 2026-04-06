@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #0b0e14;
+    --bg-card: #11141c;
+    --bg-sidebar: #0d1017;
+    --accent-blue: #00a3e0;
+    --accent-glow: rgba(0, 163, 224, 0.15);
+    --border-main: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+  }
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  @apply bg-[#0b0e14] text-slate-200 antialiased;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: rgba(13, 16, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav {
+  background: rgba(11, 14, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Typography Enhancements */
+.prose h1 {
+  @apply text-4xl font-extrabold tracking-tight mb-8;
+}
+.prose h2 {
+  @apply text-2xl font-bold tracking-tight mt-12 mb-6;
+}
+.prose h3 {
+  @apply text-xl font-semibold mt-8 mb-4;
+}
+.prose p {
+  @apply leading-relaxed mb-6 text-slate-400;
+}
+.prose ul {
+  @apply list-disc list-outside ml-6 space-y-2 mb-6;
+}
+.prose li {
+  @apply text-slate-400;
+}
+.prose strong {
+  @apply text-slate-100 font-semibold;
+}
+.prose a {
+  @apply text-sky-400 hover:text-sky-300 transition-colors underline decoration-sky-400/30 underline-offset-4 font-medium;
+}
+
+/* Glow effects */
+.glow-accent {
+  box-shadow: 0 0 40px -10px var(--accent-glow);
+}
+
+/* Sidebar active link */
+.sidebar-link-active {
+  @apply text-sky-400 bg-sky-500/10 border-r-2 border-sky-400;
+}
