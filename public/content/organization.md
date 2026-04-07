@@ -21,10 +21,11 @@ If the target subfolder does not already exist, **AutoPrefixer** will automatica
 
 By default, automatic organization is **On** to encourage best practices. You can toggle this behavior at any time in the **[Project Settings](/project-settings/)**.
 
-## Handling Folders Without Content
+## Smarter Pathing
 
-If you process a folder that already contains only Static Meshes, and the target subfolder is `Meshes`, **AutoPrefixer** is smart enough to detect that the asset is *already* in a folder named `Meshes` and will not create another nested subfolder (e.g., `Meshes/Meshes/SM_Asset`).
+**AutoPrefixer** is smart enough to detect existing structures. If you process a **Static Mesh** that is already inside a folder named `Meshes`, the utility will not create redundant nested folders (e.g., it will avoid creating `Meshes/Meshes/SM_Asset`).
 
 ## Batch Organization
 
-Selecting multiple folders or assets and running the utility is an excellent way to "clean up" a messy project that has assets scattered throughout root directories. With one click, your meshes will be moved to `Meshes/`, textures to `Textures/`, and materials to `Materials/`.
+Selecting a large set of assets (using `Ctrl+A`) and running the utility is an excellent way to "clean up" a messy project where files are scattered in root directories. With one click, your selected meshes will move to `Meshes/`, textures to `Textures/`, and materials to `Materials/`.
+

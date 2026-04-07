@@ -28,7 +28,8 @@ By default, **AutoPrefixer** is pre-configured with the most common Epic Games s
 | Niagara System | `NS_` | `NS_Fire_Explosion` |
 | Sound Wave | `SW_` | `SW_Ambient_Forest` |
 
-## Bulk Renaming Tips
+## Bulk Selection Tips
 
-- **Folder Selection**: You can select entire folders in the Content Browser and run the utility. It will process all assets inside (including subfolders if configured).
+- **Selecting Everything**: The most efficient way to process a large project is to open a folder, press `Ctrl+A` to select all assets, and then run the utility.
 - **Multiple Classes**: You don't need to select only one type of asset. Feel free to select meshes, textures, and materials all at once. **AutoPrefixer** will apply the correct rules for each individual class automatically.
+
