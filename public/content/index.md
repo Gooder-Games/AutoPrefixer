@@ -19,15 +19,16 @@ Automatically applies the correct prefixes (e.g., `M_`, `T_`, `SM_`) based on th
 Instantly sanitizes imported assets by removing redundant or incorrect prefixes from Marketplace packs, ensuring a unified namespace.
 
 #### ◈ Deep Project Organization
-Restructures your content folder and organizes orphans into logical subdirectories with a single command. 
+Restructures your content folder by intelligently routing your **selected assets** into logical subdirectories with a single command. 
 
 ---
 
 ### 🛠️ Quick Integration
 
-1.  **Select** assets in your Content Browser.
+1.  **Select your assets** in the Content Browser (Tip: Use `Ctrl+A` inside a folder).
 2.  **Right-click** > **Scripted Asset Actions** > **AutoPrefix Selected**.
-3.  **Profit**. Your naming is now perfect.
+3.  **Profit**. Your naming and organization are now perfect.
+
 
 > **Tip:** You can customize all naming rules and folder structures in the [Project Settings](/project-settings) or view more [Technical Details](/technical-details) to fit your studio's unique workflow.
 

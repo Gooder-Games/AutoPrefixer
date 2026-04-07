@@ -18,7 +18,8 @@ A collection of static utility functions that handle the heavy lifting:
 - **Transaction Support**: All actions are wrapped in an `FScopedTransaction`, allowing for instant **Undo/Redo** support.
 
 #### 2. PrefixActionUtility
-A Blueprint-exposed class that hooks into the Content Browser's context menu. This is what allows you to right-click assets and see the "AutoPrefix" option.
+A Blueprint-exposed class that hooks into the Content Browser's asset context menu. This class receives the current selection array and passes it to the C++ utility for bulk processing.
+
 
 ### 💻 Performance
 
