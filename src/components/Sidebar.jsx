@@ -35,12 +35,19 @@ const Sidebar = ({ isSidebarOpen }) => {
       className="fixed top-0 left-0 h-full w-64 glass border-r border-slate-800/50 z-40 overflow-y-auto"
     >
       <div className="p-8">
-        <NavLink to="/" className="flex items-center gap-3 mb-12 group">
-          <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center shadow-chunky transition-transform active:translate-y-0.5">
-            <Rocket size={20} className="text-white" />
-          </div>
-          <span className="font-black text-2xl tracking-tighter text-white">AUTOPREFIXER</span>
-        </NavLink>
+          <NavLink to="/" className="flex flex-col gap-1 group">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center shadow-chunky transition-transform active:translate-y-0.5">
+                <Rocket size={20} className="text-white" />
+              </div>
+              <span className="font-black text-2xl tracking-tighter text-white uppercase">AutoPrefixer</span>
+            </div>
+            <div className="flex items-center gap-2 ml-[52px]">
+              <span className="px-2 py-0.5 bg-slate-800 text-[10px] font-black tracking-widest text-accent rounded-full border border-slate-700">v1.0.0</span>
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Released</span>
+            </div>
+          </NavLink>
+
 
         <nav className="space-y-8">
           {navItems.map((section) => (
