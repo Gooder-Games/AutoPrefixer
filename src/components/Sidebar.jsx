@@ -35,17 +35,17 @@ const Sidebar = ({ isSidebarOpen }) => {
       className="fixed top-0 left-0 h-full w-64 glass border-r border-slate-800/50 z-40 overflow-y-auto"
     >
       <div className="p-8">
-        <NavLink to="/" className="flex items-center gap-3 mb-12">
-          <div className="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center">
-            <Rocket size={18} className="text-white" />
+        <NavLink to="/" className="flex items-center gap-3 mb-12 group">
+          <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center shadow-chunky transition-transform active:translate-y-0.5">
+            <Rocket size={20} className="text-white" />
           </div>
-          <span className="font-extrabold text-xl tracking-tight text-white">AutoPrefixer</span>
+          <span className="font-black text-2xl tracking-tighter text-white">AUTOPREFIXER</span>
         </NavLink>
 
         <nav className="space-y-8">
           {navItems.map((section) => (
             <div key={section.label}>
-              <h3 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4 px-3">
+              <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-4 px-3">
                 {section.label}
               </h3>
               <div className="space-y-1">
@@ -54,14 +54,14 @@ const Sidebar = ({ isSidebarOpen }) => {
                     key={item.path}
                     to={item.path}
                     className={({ isActive }) => 
-                      `flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                      `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 ${
                         isActive 
-                          ? 'bg-sky-500/10 text-sky-400 border-r-2 border-sky-400' 
-                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+                          ? 'bg-accent text-white shadow-chunky' 
+                          : 'text-slate-400 hover:text-white hover:bg-slate-800'
                       }`
                     }
                   >
-                    <item.icon size={16} />
+                    <item.icon size={18} />
                     {item.label}
                   </NavLink>
                 ))}
@@ -70,6 +70,7 @@ const Sidebar = ({ isSidebarOpen }) => {
           ))}
         </nav>
       </div>
+
     </motion.aside>
   )
 }

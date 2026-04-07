@@ -29,20 +29,21 @@ const Header = ({ setSidebarOpen, isSidebarOpen }) => {
           href="https://gooder.games" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="p-2 hover:bg-slate-800/50 rounded-lg text-slate-400 hover:text-slate-200 transition-colors"
+          className="p-2 hover:bg-slate-800/50 rounded-lg text-slate-400 hover:text-slate-100 transition-colors"
           title="Gooder Games"
         >
           <Globe size={20} />
         </a>
         <a 
-          href="https://github.com" 
+          href="https://www.fab.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-slate-100 text-slate-900 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-white transition-colors"
+          className="btn-primary flex items-center gap-2"
         >
-          View Fab Store
+          View on Fab
         </a>
       </div>
+
     </header>
   )
 }

@@ -4,81 +4,98 @@
 
 @layer base {
   :root {
-    --bg-main: #0b0e14;
-    --bg-card: #11141c;
-    --bg-sidebar: #0d1017;
-    --accent-blue: #00a3e0;
-    --accent-glow: rgba(0, 163, 224, 0.15);
-    --border-main: #1e293b;
-    --text-primary: #f8fafc;
+    --bg-main: #0f1115;
+    --bg-card: #15181e;
+    --bg-sidebar: #11141c;
+    --accent-red: #ff4d5a;
+    --border-main: #242830;
+    --text-primary: #ffffff;
     --text-secondary: #94a3b8;
   }
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  @apply bg-[#0b0e14] text-slate-200 antialiased;
+  font-family: 'Lexend', 'Inter', system-ui, sans-serif;
+  @apply bg-[#0f1115] text-white antialiased;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 code, pre {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Glassmorphism Classes */
+/* Chunky Glassmorphism */
 .glass {
-  background: rgba(13, 16, 23, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(17, 20, 28, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid var(--border-main);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
 }
 
 .glass-nav {
-  background: rgba(11, 14, 20, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 17, 21, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--border-main);
+}
+
+/* Chunky Cards and Buttons */
+.chunky-card {
+  @apply bg-slate-800 border-2 border-slate-700/50 rounded-xl p-6 transition-all duration-200;
+  box-shadow: 0 4px 0 0 rgba(0,0,0,0.3);
+}
+.chunky-card:hover {
+  @apply border-accent transform -translate-y-1;
+  box-shadow: 0 6px 0 0 rgba(255, 77, 90, 0.2);
+}
+
+.btn-primary {
+  @apply bg-accent text-white font-extrabold px-6 py-2 rounded-lg transition-all active:translate-y-1;
+  box-shadow: 0 4px 0 0 rgba(180, 40, 50, 1);
+}
+.btn-primary:hover {
+  @apply bg-[#ff5d6a];
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #0f1115;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #242830;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #334155;
 }
 
-/* Typography Enhancements */
+/* Typography Enhancements (Brand Focus) */
 .prose h1 {
-  @apply text-4xl font-extrabold tracking-tight mb-8;
+  @apply text-5xl font-black tracking-tight mb-8 text-white;
+  letter-spacing: -0.03em;
 }
 .prose h2 {
-  @apply text-2xl font-bold tracking-tight mt-12 mb-6;
+  @apply text-2xl font-extrabold tracking-tight mt-12 mb-6 text-white bg-slate-800 px-4 py-2 inline-block rounded-lg;
+  border-bottom: 4px solid var(--accent-red);
 }
 .prose h3 {
-  @apply text-xl font-semibold mt-8 mb-4;
+  @apply text-xl font-bold mt-8 mb-4 text-white;
 }
 .prose p {
   @apply leading-relaxed mb-6 text-slate-400;
 }
-.prose ul {
-  @apply list-disc list-outside ml-6 space-y-2 mb-6;
-}
-.prose li {
-  @apply text-slate-400;
-}
 .prose strong {
-  @apply text-slate-100 font-semibold;
+  @apply text-slate-100 font-bold;
 }
 .prose a {
-  @apply text-sky-400 hover:text-sky-300 transition-colors underline decoration-sky-400/30 underline-offset-4 font-medium;
+  @apply text-accent hover:text-[#ff5d6a] transition-colors underline decoration-accent/30 underline-offset-4 font-bold;
 }
+
 
 /* Glow effects */
 .glow-accent {

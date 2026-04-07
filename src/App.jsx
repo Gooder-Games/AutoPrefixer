@@ -10,10 +10,11 @@ const App = () => {
   const location = useLocation()
 
   return (
-    <div className="flex min-h-screen bg-[#0b0e14] text-slate-200">
+    <div className="flex min-h-screen bg-[#0f1115] text-white">
       {/* Background Glow */}
-      <div className="fixed top-[-100px] left-[-100px] w-96 h-96 bg-sky-500/10 blur-[120px] rounded-full pointer-events-none" />
-      <div className="fixed bottom-[-100px] right-[-100px] w-96 h-96 bg-blue-600/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="fixed top-[-100px] left-[-100px] w-96 h-96 bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="fixed bottom-[-100px] right-[-100px] w-96 h-96 bg-accent/3 blur-[120px] rounded-full pointer-events-none" />
+
 
       <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
 
