@@ -29,6 +29,6 @@ Restructures your content folder and organizes orphans into logical subdirectori
 2.  **Right-click** > **Scripted Asset Actions** > **AutoPrefix Selected**.
 3.  **Profit**. Your naming is now perfect.
 
-> [!TIP]
-> You can customize all naming rules and folder structures in the [Project Settings](/project-settings) to fit your studio's unique workflow.
+> **Tip:** You can customize all naming rules and folder structures in the [Project Settings](/project-settings) or view more [Technical Details](/technical-details) to fit your studio's unique workflow.
+
 
