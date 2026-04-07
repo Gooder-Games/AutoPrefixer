@@ -8,7 +8,8 @@ Standardizing your asset naming conventions takes less than 2 minutes. Follow th
 ## Installation
 
 1. **Close Unreal Engine**: Ensure your project is not running before adding the plugin files.
-2. **Download & Extract**: Download the plugin folder from the [Fab Store](https://www.fab.com/plugins/autoprefixer) and extract the `AutoPrefixer` folder.
+2. **Download & Extract**: Download the plugin folder from the [Fab Store](https://www.fab.com/listings/0e94c92b-6e4d-4a76-aca8-00893621faab) and extract the `AutoPrefixer` folder.
+
 3. **Add to Plugins**: 
    - Navigate to your project's root directory.
    - If a `Plugins` folder doesn't already exist, create one.

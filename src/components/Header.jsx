@@ -35,10 +35,10 @@ const Header = ({ setSidebarOpen, isSidebarOpen }) => {
           <Globe size={20} />
         </a>
         <a 
-          href="https://www.fab.com" 
-          target="_blank" 
+          href="https://www.fab.com/listings/0e94c92b-6e4d-4a76-aca8-00893621faab" 
+          target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary flex items-center gap-2"
+          className="btn-primary flex items-center gap-2 bg-[#0066FF] hover:bg-[#0052CC] text-white"
         >
           View on Fab
         </a>
