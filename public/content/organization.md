@@ -17,9 +17,15 @@ If you are renaming a **Static Mesh** with the target subfolder `Meshes` and the
 
 If the target subfolder does not already exist, **AutoPrefixer** will automatically create it. This ensures that your project remains organized without you having to manually create new directories for every asset type.
 
-## How to Toggle
+## Enabling the Feature
 
-By default, automatic organization is **On** to encourage best practices. You can toggle this behavior at any time in the **[Project Settings](/project-settings/)**.
+By default, automatic organization is **Disabled** to ensure you have total control over your project structure. 
+
+To enable it, go to **Edit > Project Settings > Plugins > Auto Prefixer** and check the box for **Enable Auto-Organization**. 
+
+> [!IMPORTANT]
+> Once enabled, the utility will automatically move your selected assets into their designated subfolders (e.g. `Meshes/`, `Textures/`) during the renaming process.
+
 
 ## Smarter Pathing
 
